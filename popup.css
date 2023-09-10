@@ -32,9 +32,16 @@ body{
     text-align: center;
     border-radius: 8px;
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+}
+.show{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+    transition: transform .5s, top .5s;
 }
 .icon i {
     margin-top: -50%;
